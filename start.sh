@@ -14,7 +14,7 @@ fi
 
 chmod +x /files/runas.sh
 chmod +x /files/monitor.py
-mkdir -p /config/handbrake
+mkdir -p /config
 
 #-----------------------------------------------------------------------------------------------------------------------
 
@@ -25,6 +25,7 @@ mkdir -p /config/handbrake
 
 HOME_DIR=$(getent passwd $USER_ID | cut -d: -f6)
 mkdir -p $HOME_DIR/.config
+rm -f /config/handbrake
 ln -s /config/handbrake $HOME_DIR/.config/ghb
 
 #-----------------------------------------------------------------------------------------------------------------------

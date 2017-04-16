@@ -48,4 +48,4 @@ With the default configuration, files written to the watch directory will be ren
 
 ## Credits
 
-This docker container was initially based on the (sparklyballs/handbrake container)[https://github.com/sparklyballs/desktop-dockers].
+This docker container was initially based on the [sparklyballs/handbrake container](https://github.com/sparklyballs/desktop-dockers).

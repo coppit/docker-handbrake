@@ -2,7 +2,7 @@
 
 This is a Docker container for running [HandBrake](https://handbrake.fr/), a video encoder. The container features both a UI version of HandBrake, as well as a fully-automated version. In the automated version, you drop a file into a watch directory and the container will begin encoding it, putting the resulting file into the output directory.
 
-This docker image is available [on Docker Hub](https://hub.docker.com/r/coppit/filebot/).
+This docker image is available [on Docker Hub](https://hub.docker.com/r/coppit/handbrake/).
 
 ## Usage
 

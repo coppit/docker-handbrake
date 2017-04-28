@@ -25,7 +25,7 @@ mkdir -p /config
 
 HOME_DIR=$(getent passwd $USER_ID | cut -d: -f6)
 mkdir -p $HOME_DIR/.config
-rm -f /config/handbrake
+rm -f $HOME_DIR/.config/ghb
 ln -s /config/handbrake $HOME_DIR/.config/ghb
 
 #-----------------------------------------------------------------------------------------------------------------------

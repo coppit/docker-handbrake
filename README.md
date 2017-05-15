@@ -20,6 +20,8 @@ There are two ways to use the interactive user interface. One is to connect to t
 * [Microsoft Remote Desktop for OS X](https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12)
 * [rdesktop for Linux](http://www.rdesktop.org/)
 
+The second method is to point your web browser to http://<your docker host>:8080/. This will launch a web browser-based user interface.
+
 Of course, if you change the host ports, then when you connect you'll have to specify the server as `<host ip>:<host port>`. Feel free to drop the 3389 mapping if you don't plan to use RDP, or the 8080 mapping if you don't plan to use the web browser.  
 
 ### Non-Interactive Method

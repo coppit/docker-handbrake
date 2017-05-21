@@ -14,6 +14,8 @@ ADD dpkg-excludes /etc/dpkg/dpkg.cfg.d/excludes
 
 RUN \
 
+set -x && \
+
 # Create dir to keep things tidy. Make sure it's readable by $USER_ID
 mkdir /files && \
 chmod a+rwX /files && \
@@ -46,6 +48,7 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
 VOLUME ["/media", "/watch", "/output", "/config"]
 
 EXPOSE 3389 8080
+
 # Set the locale, to support files that have non-ASCII characters
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8

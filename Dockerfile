@@ -12,7 +12,7 @@ CMD ["/sbin/my_init"]
 ENV DEBIAN_FRONTEND noninteractive
 ADD dpkg-excludes /etc/dpkg/dpkg.cfg.d/excludes
 
-RUN \
+RUN true && \
 
 set -x && \
 
@@ -57,7 +57,7 @@ ENV LC_ALL en_US.UTF-8
 
 COPY startapp.sh /
 
-RUN \
+RUN true && \
 
 # Fix guacamole errors and warnings:
 # SEVERE: The scratchDir you specified: /var/lib/tomcat7/work/Catalina/localhost/guacamole is unusable.

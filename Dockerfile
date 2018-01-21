@@ -70,7 +70,7 @@ ln -s /var/lib/tomcat7/shared /usr/share/tomcat7/shared && \
 
 # Revision-lock to a specific version to avoid any surprises.
 wget -q -O /files/runas.sh \
-  'https://raw.githubusercontent.com/coppit/docker-inotify-command/1401a636bbc9369141d0d32ac7b80c2bf7fcdbcb/runas.sh' && \
+  'https://raw.githubusercontent.com/coppit/docker-inotify-command/1d4b941873b670525fd159dcb9c01bb2570b0565/runas.sh' && \
 chmod +x /files/runas.sh && \
 wget -q -O /files/monitor.py \
   'https://raw.githubusercontent.com/coppit/docker-inotify-command/1401a636bbc9369141d0d32ac7b80c2bf7fcdbcb/monitor.py' && \

@@ -34,9 +34,7 @@ chown -R $USER_ID:$GROUP_ID /config
 
 #-----------------------------------------------------------------------------------------------------------------------
 
-cp /config/HandBrake.conf /tmp/HandBrake.conf
+tr -d '\r' < /config/HandBrake.conf >> /files/HandBrake.conf
 
-echo "COMMAND='/bin/bash /files/convert.sh'" >> /tmp/HandBrake.conf
-echo "WATCH_DIR=/watch" >> /tmp/HandBrake.conf
-
-
+echo "COMMAND='/bin/bash /files/convert.sh'" >> /files/HandBrake.conf
+echo "WATCH_DIR=/watch" >> /files/HandBrake.conf

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec /files/monitor.py /tmp/HandBrake.conf
+exec /files/monitor.py /files/HandBrake.conf

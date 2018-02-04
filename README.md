@@ -48,6 +48,8 @@ You can also configure these settings by setting environment variables when runn
 
 With the default configuration, files written to the watch directory will be renamed and copied to the output directory. It is recommended that you do **not** overlap your watch and output directories when creating the container.
 
+The `USE_UI` setting controls whether the user interface features are enabled. Set this to "yes" to enable the UI, which uses approximately 266MB of RAM at idle, as opposed to 31MB of RAM. On my machine it uses .16% CPU instead of .04% CPU.
+
 ## Credits
 
 This docker container was initially based on the [sparklyballs/handbrake container](https://github.com/sparklyballs/desktop-dockers).

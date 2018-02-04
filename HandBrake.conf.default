@@ -37,3 +37,7 @@ UMASK=0000
 # The command to run to convert the file. For a list of presets visit
 # https://handbrake.fr/docs/en/latest/technical/official-presets.html
 HANDBRAKE_COMMAND='HandBrakeCLI -i "$SRCDIR/$SUBDIR/$FILENAME" -o "$DESTDIR/$SUBDIR/$BASE.mp4" --preset-import-file /config/handbrake/presets.json -Z "Very Fast 1080p30"'
+
+# Run the UI in addition to the normal non-interactive behavior. The UI uses about 266MB of RAM at idle, as opposed to
+# about 31MB of RAM. On my machine it uses .16% CPU instead of .04% CPU.
+USE_UI=false

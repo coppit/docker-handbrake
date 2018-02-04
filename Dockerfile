@@ -55,8 +55,6 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-COPY startapp.sh /
-
 RUN true && \
 
 # Fix guacamole errors and warnings:
@@ -84,3 +82,7 @@ ADD 50_configure_handbrake.sh /etc/my_init.d/
 RUN mkdir /etc/service/monitor
 ADD monitor.sh /etc/service/monitor/run
 RUN chmod +x /etc/service/monitor/run
+
+RUN mkdir /etc/service/handbrake-ui
+ADD startapp.sh /etc/service/handbrake-ui/run
+RUN chmod +x /etc/service/handbrake-ui/run

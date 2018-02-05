@@ -26,6 +26,8 @@ do
     EXTENSION=${FILENAME##*.}
     BASE=${FILENAME%.*}
 
+    mkdir -p "$DESTDIR/$SUBDIR"
+
     eval $HANDBRAKE_COMMAND &
 
     PID=$!

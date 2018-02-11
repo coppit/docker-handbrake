@@ -8,7 +8,7 @@ function ts {
 
 #-----------------------------------------------------------------------------------------------------------------------
 
-if [ "$USE_UI" == "yes" ]
+if [ "$USE_UI" == "yes" ] || [ "$USE_UI" == "true" ]
 then
   echo "$(ts) Running HandBrake GUI"
   /usr/bin/ghb
@@ -17,5 +17,9 @@ else
   # Give services some time to start before we kill them
   sleep 5
   sv stop guacd tomcat7 xrdp xrdp-sesman openbox
-  rm -rf /etc/service/handbrake-ui
+
+  while true
+  do
+    sleep 300
+  done
 fi

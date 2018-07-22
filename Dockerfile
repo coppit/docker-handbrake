@@ -31,10 +31,10 @@ add-apt-repository ppa:stebbins/handbrake-releases && \
 
 # Update apt and install dependencies.
 apt-get update && \
-apt-get install -qy handbrake-gtk handbrake-cli gnome-themes-standard && \
+apt-get install -qy handbrake-gtk=1.1.0-zhb-1ppa1~trusty1 handbrake-cli=1.1.0-zhb-1ppa1~trusty1 gnome-themes-standard=3.10.0-1ubuntu2 && \
 
 # Install watchdog module for Python3, for monitor.py
-apt-get install -qy python3-setuptools && \
+apt-get install -qy python3-setuptools=3.3-1ubuntu2 && \
 easy_install3 watchdog && \
 
 # clean up
